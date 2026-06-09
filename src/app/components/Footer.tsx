@@ -46,8 +46,8 @@ export default function Footer({ language, setLanguage }: FooterProps) {
             <div className="flex items-center gap-2 mb-4">
               <Mountain className="w-8 h-8 text-primary" strokeWidth={1.5} />
               <span
-                className="text-2xl font-bold text-primary"
-                style={{ fontFamily: "Playfair Display, serif", fontStyle: "italic" }}
+                className="text-2xl font-bold text-primary tracking-wide"
+                style={{ fontFamily: "Fjalla One, sans-serif" }}
               >
                 ARGYMAQ
               </span>

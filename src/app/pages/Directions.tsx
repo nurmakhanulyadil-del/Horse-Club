@@ -6,44 +6,44 @@ const translations = {
   kz: {
     title: "Қалай жетуге болады",
     subtitle: "Бізді оңай табыңыз",
-    description: "Google Maps немесе 2GIS арқылы бізді табыңыз — Алматыдан бір сағаттық жолда",
+    description: "Google Maps немесе 2GIS арқылы бізді табыңыз",
     mapTitle: "Карта",
     googleMaps: "Google Maps-те ашу",
     twoGis: "2GIS-те ашу",
     address: "Мекенжай",
-    addressText: "Алматы облысы, Іле ауданы",
+    addressText: "ㅤㅤТәтімов көшесі 37в,ㅤㅤ Наурызбай ауданы, Алматы",
     phone: "Телефон",
     phoneNumber: "+7 (706) 642-17-68",
     workingHours: "Жұмыс уақыты",
-    hours: "Күн сайын, 09:00 - 22:00",
+    hours: "Күн сайын, 09:00 - 19:00",
   },
   ru: {
     title: "Как добраться",
     subtitle: "Найдите нас легко",
-    description: "Найдите нас через Google Maps или 2GIS — мы в часе езды от Алматы",
+    description: "Найдите нас через Google Maps или 2GIS",
     mapTitle: "Карта",
     googleMaps: "Открыть в Google Maps",
     twoGis: "Открыть в 2GIS",
     address: "Адрес",
-    addressText: "Алматинская область, Илийский район",
+    addressText: "Улица Татимова 37в, Наурызбайский район, Алматы",
     phone: "Телефон",
     phoneNumber: "+7 (706) 642-17-68",
     workingHours: "Время работы",
-    hours: "Ежедневно, 09:00 - 22:00",
+    hours: "Ежедневно, 09:00 - 19:00",
   },
   en: {
     title: "Directions",
     subtitle: "Find us easily",
-    description: "Find us through Google Maps or 2GIS — we are one hour's drive from Almaty",
+    description: "Find us through Google Maps or 2GIS",
     mapTitle: "Map",
     googleMaps: "Open in Google Maps",
     twoGis: "Open in 2GIS",
     address: "Address",
-    addressText: "Almaty Region, Ile District",
+    addressText: "ㅤㅤ37v Tatimov Street,ㅤㅤ Nauryzbai district, Almaty",
     phone: "Phone",
     phoneNumber: "+7 (706) 642-17-68",
     workingHours: "Working Hours",
-    hours: "Daily, 09:00 - 22:00",
+    hours: "Daily, 09:00 - 19:00",
   },
 };
 
@@ -90,7 +90,7 @@ export default function Directions() {
           <div className="relative w-full h-[500px] rounded-lg overflow-hidden border-2 border-primary/30 shadow-2xl bg-card">
             {/* Google Maps iframe placeholder - can be replaced with actual embed */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.842648936892!2d76.889!3d43.238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDE0JzE2LjgiTiA3NsKwNTMnMjAuNCJF!5e0!3m2!1sen!2skz!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1455.1191698032897!2d76.8423995!3d43.162521!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883670040345d87%3A0xf3cbcce8c4994826!2z0JrQvtC90LXRhiDRg9C70LjRhtGLINCi0LDRgtC40LzQvtCy0LAgLtCX0LAg0L_RgNC-0LrQsNGCINC70L7RiNCw0LTQtdC5ICLQkNGA0pPRi9C80LDSmyI!5e0!3m2!1sen!2skz!4v1780547687316!5m2!1sen!2skz"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -104,7 +104,7 @@ export default function Directions() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center mt-12">
             <a
-              href="https://maps.google.com"
+              href="https://maps.app.goo.gl/yk7HT3EhaT7SYD3N9"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-3 px-8 py-4 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 rounded-lg text-lg font-medium"

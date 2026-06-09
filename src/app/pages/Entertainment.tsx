@@ -11,43 +11,31 @@ const translations = {
         emoji: "🐴",
         title: "Атпен серуендеу",
         description: "Таулардың көрінісі бар табиғи жолдармен атпен серуен",
-        price: "8,000 ₸",
-        unit: "адамына",
       },
       {
         emoji: "🌸",
         title: "Алтыбақан",
         description: "Дәстүрлі қазақ тербелісінде демалыс",
-        price: "3,000 ₸",
-        unit: "сағатына",
       },
       {
         emoji: "📷",
         title: "Фотосессия",
         description: "Табиғи пейзаждармен кәсіби түсірілістер",
-        price: "15,000 ₸",
-        unit: "сағатына",
       },
       {
         emoji: "🎤",
         title: "Караоке",
         description: "Ашық аспан астында әнмен демалу",
-        price: "5,000 ₸",
-        unit: "сағатына",
       },
       {
         emoji: "🏹",
-        title: "Садақтан ату",
+        title: "Садақ ату",
         description: "Нұсқаушылармен садақтан ату сабақтары",
-        price: "4,000 ₸",
-        unit: "адамына",
       },
       {
         emoji: "🎲",
         title: "Үстел ойындары",
         description: "Отбасымен және достармен ойындар",
-        price: "2,000 ₸",
-        unit: "сағатына",
       },
     ],
     contact: "Брондау үшін бізбен байланысыңыз",
@@ -60,43 +48,31 @@ const translations = {
         emoji: "🐴",
         title: "Конная прогулка",
         description: "Прогулки на лошадях по живописным тропам",
-        price: "8,000 ₸",
-        unit: "за человека",
       },
       {
         emoji: "🌸",
-        title: "Алтыбақан",
+        title: "Алтыбакан",
         description: "Отдых на традиционных казахских качелях",
-        price: "3,000 ₸",
-        unit: "в час",
       },
       {
         emoji: "📷",
         title: "Фотосессия",
         description: "Профессиональные съемки на фоне природы",
-        price: "15,000 ₸",
-        unit: "в час",
       },
       {
         emoji: "🎤",
         title: "Караоке",
         description: "Пение под открытым небом",
-        price: "5,000 ₸",
-        unit: "в час",
       },
       {
         emoji: "🏹",
         title: "Стрельба из лука",
         description: "Занятия стрельбой с инструкторами",
-        price: "4,000 ₸",
-        unit: "за человека",
       },
       {
         emoji: "🎲",
         title: "Настольные игры",
         description: "Игры с семьёй и друзьями",
-        price: "2,000 ₸",
-        unit: "в час",
       },
     ],
     contact: "Свяжитесь с нами для бронирования",
@@ -109,43 +85,31 @@ const translations = {
         emoji: "🐴",
         title: "Horse Riding",
         description: "Scenic trail rides through nature",
-        price: "8,000 ₸",
-        unit: "per person",
       },
       {
         emoji: "🌸",
         title: "Altybakan",
         description: "Relax on traditional Kazakh swings",
-        price: "3,000 ₸",
-        unit: "per hour",
       },
       {
         emoji: "📷",
         title: "Photo Session",
         description: "Professional photography with natural landscapes",
-        price: "15,000 ₸",
-        unit: "per hour",
       },
       {
         emoji: "🎤",
         title: "Karaoke",
         description: "Singing under the open sky",
-        price: "5,000 ₸",
-        unit: "per hour",
       },
       {
         emoji: "🏹",
         title: "Archery",
         description: "Archery lessons with instructors",
-        price: "4,000 ₸",
-        unit: "per person",
       },
       {
         emoji: "🎲",
         title: "Board Games",
         description: "Games with family and friends",
-        price: "2,000 ₸",
-        unit: "per hour",
       },
     ],
     contact: "Contact us for booking",
@@ -154,12 +118,12 @@ const translations = {
 
 // Replaceable service images
 const serviceImages = [
-  "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=600&h=400&fit=crop&auto=format",
-  "https://images.unsplash.com/photo-1516815231560-8f41ec531527?w=600&h=400&fit=crop&auto=format",
-  "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=600&h=400&fit=crop&auto=format",
-  "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=400&fit=crop&auto=format",
-  "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&h=400&fit=crop&auto=format",
-  "https://images.unsplash.com/photo-1611371805429-8b5c1b2c34ba?w=600&h=400&fit=crop&auto=format",
+  "https://i.yapx.ru/dzaM4.jpg",
+  "https://i.yapx.ru/dzaM3.jpg",
+  "https://i.yapx.ru/dzaM5.jpg",
+  "https://i.yapx.ru/dzaYz.jpg",
+  "https://i.yapx.ru/dzaQY.jpg",
+  "https://i.yapx.ru/dzaM1.jpg",
 ];
 
 export default function Entertainment() {
@@ -203,11 +167,6 @@ export default function Entertainment() {
                   {/* Emoji overlay */}
                   <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm w-16 h-16 rounded-full flex items-center justify-center shadow-lg">
                     <span className="text-3xl">{service.emoji}</span>
-                  </div>
-                  {/* Price badge */}
-                  <div className="absolute bottom-4 right-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg shadow-lg">
-                    <div className="text-xl font-bold">{service.price}</div>
-                    <div className="text-xs opacity-90">{service.unit}</div>
                   </div>
                 </div>
 

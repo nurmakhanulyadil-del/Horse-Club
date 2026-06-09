@@ -12,16 +12,16 @@ const translations = {
       "Біздің ат клубымызда тәжірибелі нұсқаушылармен бірге атпен серуендеңіз. Бастауыштардан тәжірибелілерге дейін барлық деңгейлер үшін сабақтар. Біздің аттарымыз жақсы дайындалған және адамдармен жұмыс істеуге үйретілген. Таулардың тамаша көрінісі бар табиғи жолдармен серуен жасаңыз.",
     gallery: "Фото галерея",
     sport: {
-      title: "Конный спорт",
-      lesson30: "30 минуттық сабақ",
-      lesson60: "1 сағаттық сабақ",
-      group: "Топтық сабақ",
+      title: "Атпен серуендеу",
+      lesson30: "Атпен серуен (1 адамға)",
+      lesson60: "6 адамға дейінгі топқа арналған атты тур + таңдау бойынша бір ыстық тағам (адамнан)",
+      group: "Күту кезінде садақ атып, алтыбақанда тербеле аласыз",
     },
     lessons: {
-      title: "Ат мінгені үйрену сабақтары",
-      beginner: "Бастауыштарға арналған сабақ",
-      children: "Балаларға арналған сабақ",
-      course: "Курс (5 сабақ)",
+      title: "Атқа мінуді үйрену сабақтары",
+      beginner: "Алғашқы 3 сабақ",
+      children: "3-ші сабақтан кейін",
+      course: "Күту кезінде садақ атып, алтыбақанда тербеле аласыз",
     },
     contact: "Брондау үшін бізбен байланысыңыз",
   },
@@ -32,16 +32,16 @@ const translations = {
       "В нашем конном клубе вы можете совершить прогулки на лошадях с опытными инструкторами. Занятия для всех уровней от новичков до опытных наездников. Наши лошади хорошо подготовлены и обучены работе с людьми. Прогулки по живописным тропам с видом на горы.",
     gallery: "Фото галерея",
     sport: {
-      title: "Конный спорт",
-      lesson30: "Занятие 30 мин",
-      lesson60: "Занятие 1 час",
-      group: "Групповое занятие",
+      title: "Конные прогулки",
+      lesson30: "Конная прогулка (на 1 человека)",
+      lesson60: "Конный тур для группы до 6 человек + одно горячее блюдо на выбор (с человека)",
+      group: "Во время ожидания вы можете пострелять из лука и покачаться на алтыбакане",
     },
     lessons: {
       title: "Уроки верховой езды",
-      beginner: "Урок для начинающих",
-      children: "Урок для детей",
-      course: "Курс (5 занятий)",
+      beginner: "Первые 3 урока",
+      children: "После 3-го урока",
+      course: "Во время ожидания вы можете пострелять из лука и покачаться на алтыбакане",
     },
     contact: "Свяжитесь с нами для бронирования",
   },
@@ -52,16 +52,16 @@ const translations = {
       "At our equestrian club, enjoy horseback riding with experienced instructors. Lessons for all levels from beginners to experienced riders. Our horses are well-trained and accustomed to working with people. Ride through scenic trails with mountain views.",
     gallery: "Photo Gallery",
     sport: {
-      title: "Equestrian Sport",
-      lesson30: "30-minute lesson",
-      lesson60: "1-hour lesson",
-      group: "Group lesson",
+      title: "Horse Riding",
+      lesson30: "Horseback ride (per person)",
+      lesson60: "Horseback tour for groups up to 6 people + one hot dish of choice (per person)",
+      group: "While waiting, you can try archery and ride the Altybakan",
     },
     lessons: {
-      title: "Riding Lessons",
-      beginner: "Beginner lesson",
-      children: "Children's lesson",
-      course: "Course (5 lessons)",
+      title: "Horse Riding Lessons",
+      beginner: "First 3 lessons",
+      children: "After the 3rd lesson",
+      course: "While waiting, you can try archery and ride the Altybakan",
     },
     contact: "Contact us for booking",
   },
@@ -69,29 +69,25 @@ const translations = {
 
 // Editable prices
 const sportPrices = {
-  lesson30: "5,000 ₸",
-  lesson60: "8,000 ₸",
-  group: "6,000 ₸",
+  lesson30: "7,000 ₸",
+  lesson60: "15,000 ₸",
+  group: "",
 };
 
 const lessonPrices = {
-  beginner: "7,000 ₸",
-  children: "6,000 ₸",
-  course: "30,000 ₸",
+  beginner: "10,000 ₸",
+  children: "7,000 ₸",
+  course: "",
 };
 
-// Carousel images (10 slots - replaceable)
+// Carousel images (6 slots - replaceable)
 const carouselImages = [
-  "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=1200&h=800&fit=crop&auto=format",
-  "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=1200&h=800&fit=crop&auto=format",
-  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=800&fit=crop&auto=format",
-  "https://images.unsplash.com/photo-1551410224-699683e15636?w=1200&h=800&fit=crop&auto=format",
-  "https://images.unsplash.com/photo-1589987607521-c1d6e0c6e870?w=1200&h=800&fit=crop&auto=format",
-  "https://images.unsplash.com/photo-1569867037406-6b9ad775b4e0?w=1200&h=800&fit=crop&auto=format",
-  "https://images.unsplash.com/photo-1582053433119-e4d56a67c1f0?w=1200&h=800&fit=crop&auto=format",
-  "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?w=1200&h=800&fit=crop&auto=format",
-  "https://images.unsplash.com/photo-1568393691622-c7ba131d63b4?w=1200&h=800&fit=crop&auto=format",
-  "https://images.unsplash.com/photo-1542080681-b52d9e55cbfe?w=1200&h=800&fit=crop&auto=format",
+  "https://i.yapx.ru/dzcTu.png",
+  "https://i.yapx.ru/dzcTo.png",
+  "https://i.yapx.ru/dzcTn.png",
+  "https://i.yapx.ru/dzcTc.png",
+  "https://i.yapx.ru/dzcTY.png",
+  "https://i.yapx.ru/dzcTa.png",
 ];
 
 export default function Horses() {
@@ -99,7 +95,6 @@ export default function Horses() {
   const t = translations[language];
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
-  const [selectedIndex, setSelectedIndex] = useState(0);
 
   const scrollPrev = () => emblaApi?.scrollPrev();
   const scrollNext = () => emblaApi?.scrollNext();
@@ -194,17 +189,17 @@ export default function Horses() {
               <div className="mb-6 h-1 w-20 bg-primary/50"></div>
 
               <div className="space-y-4">
-                <div className="flex justify-between items-center py-4 border-b border-primary/20">
+                <div className="flex justify-between items-start gap-4 py-4 border-b border-primary/20">
                   <span className="text-foreground/80 text-lg">{t.sport.lesson30}</span>
-                  <span className="text-2xl font-bold text-primary">{sportPrices.lesson30}</span>
+                  <span className="text-2xl font-bold text-primary shrink-0">{sportPrices.lesson30}</span>
                 </div>
-                <div className="flex justify-between items-center py-4 border-b border-primary/20">
+                <div className="flex justify-between items-start gap-4 py-4 border-b border-primary/20">
                   <span className="text-foreground/80 text-lg">{t.sport.lesson60}</span>
-                  <span className="text-2xl font-bold text-primary">{sportPrices.lesson60}</span>
+                  <span className="text-2xl font-bold text-primary shrink-0">{sportPrices.lesson60}</span>
                 </div>
-                <div className="flex justify-between items-center py-4">
+                <div className="flex justify-between items-start gap-4 py-4">
                   <span className="text-foreground/80 text-lg">{t.sport.group}</span>
-                  <span className="text-2xl font-bold text-primary">{sportPrices.group}</span>
+                  <span className="text-2xl font-bold text-primary shrink-0">{sportPrices.group}</span>
                 </div>
               </div>
 
@@ -229,17 +224,17 @@ export default function Horses() {
               <div className="mb-6 h-1 w-20 bg-primary/50"></div>
 
               <div className="space-y-4">
-                <div className="flex justify-between items-center py-4 border-b border-primary/20">
+                <div className="flex justify-between items-start gap-4 py-4 border-b border-primary/20">
                   <span className="text-foreground/80 text-lg">{t.lessons.beginner}</span>
-                  <span className="text-2xl font-bold text-primary">{lessonPrices.beginner}</span>
+                  <span className="text-2xl font-bold text-primary shrink-0">{lessonPrices.beginner}</span>
                 </div>
-                <div className="flex justify-between items-center py-4 border-b border-primary/20">
+                <div className="flex justify-between items-start gap-4 py-4 border-b border-primary/20">
                   <span className="text-foreground/80 text-lg">{t.lessons.children}</span>
-                  <span className="text-2xl font-bold text-primary">{lessonPrices.children}</span>
+                  <span className="text-2xl font-bold text-primary shrink-0">{lessonPrices.children}</span>
                 </div>
-                <div className="flex justify-between items-center py-4">
+                <div className="flex justify-between items-start gap-4 py-4">
                   <span className="text-foreground/80 text-lg">{t.lessons.course}</span>
-                  <span className="text-2xl font-bold text-primary">{lessonPrices.course}</span>
+                  <span className="text-2xl font-bold text-primary shrink-0">{lessonPrices.course}</span>
                 </div>
               </div>
 

@@ -12,19 +12,19 @@ const translations = {
         "Заманауи жайлылықпен жабдықталған нағыз қазақ киіз үйлерінде түнеңіз. Әрбір киіз үй 4-6 адамға арналған, қолмен жасалған жиһазбен безендірілген. Таулардың тамаша көрінісі және табиғи ортамен толық үйлесім. Барлық қажетті қолжетімділік қамтамасыз етілген: жылыту, жарық, жұмсақ төсек-орын және басқа да ыңғайлылықтар.",
       priceTable: {
         title: "Бағалар",
-        overnight: "Түнеу (4 адамға дейін)",
-        additionalGuest: "Қосымша қонақ",
-        dayVisit: "Түнемей күндіз",
+        overnight: "Киіз үйлер (3–16 адам)",
+        additionalGuest: "10 адамға арналған беседка + тапшан",
+        dayVisit: "Кешен (адам санына байланысты)",
       },
     },
     sauna: {
-      title: "Русская баня",
+      title: "Орыс моншасы",
       description:
         "Таулардың көрінісі бар ағаш моншада демалыңыз. Біздің моншамыз дәстүрлі рецепттер бойынша салынған және табиғи материалдардан жасалған. Дәстүрлі шілдехана рәсімдері, ароматерапия және демалу аймағы қолжетімді. Суық суға шомылу бассейні және демалу террасасы бар. Тәжірибелі моншашылардан кеңес алыңыз.",
       priceTable: {
         title: "Бағалар",
-        rental: "Жалға алу (2 сағатқа дейін)",
-        additionalHour: "Әрбір қосымша сағат",
+        rental: "Монша, қосымша демалыс аймағымен және үй кинотеатрымен",
+        additionalHour: "Буландырушының қызметтері бөлек төленеді",
       },
     },
     price: "Баға:",
@@ -39,9 +39,9 @@ const translations = {
         "Ночуйте в настоящих казахских юртах с современными удобствами. Каждая юрта рассчитана на 4-6 человек и украшена ручной мебелью. Прекрасный вид на горы и полное единение с природой. Обеспечены все необходимые удобства: отопление, освещение, мягкие кровати и другие удобства.",
       priceTable: {
         title: "Цены",
-        overnight: "Ночёвка (до 4 чел.)",
-        additionalGuest: "Доп. гость",
-        dayVisit: "День без ночёвки",
+        overnight: "Юрты (от 3 до 16 человек)",
+        additionalGuest: "Беседка + топчан на 10 человек",
+        dayVisit: "Комплекс (в зависимости от количества человек)",
       },
     },
     sauna: {
@@ -50,8 +50,8 @@ const translations = {
         "Отдохните в деревянной бане с видом на горы. Наша баня построена по традиционным рецептам и из натуральных материалов. Доступны традиционные банные процедуры, ароматерапия и зона отдыха. Бассейн с холодной водой и терраса для релаксации. Консультации от опытных банщиков.",
       priceTable: {
         title: "Цены",
-        rental: "Аренда (до 2 часов)",
-        additionalHour: "Каждый доп. час",
+        rental: "Баня с дополнительной зоной отдыха и домашним кинотеатром",
+        additionalHour: "Услуги пармейстера оплачиваются отдельно",
       },
     },
     price: "Цена:",
@@ -66,9 +66,9 @@ const translations = {
         "Stay in authentic Kazakh yurts equipped with modern amenities. Each yurt accommodates 4-6 people and features handcrafted furniture. Beautiful mountain views and complete immersion in nature. All necessary amenities provided: heating, lighting, soft beds, and other comforts.",
       priceTable: {
         title: "Pricing",
-        overnight: "Overnight stay (up to 4 people)",
-        additionalGuest: "Additional guest",
-        dayVisit: "Day visit without overnight",
+        overnight: "Yurts (for 3–16 people)",
+        additionalGuest: "Gazebo + topchan (for 10 people)",
+        dayVisit: "Full Complex (depending on the number of people)",
       },
     },
     sauna: {
@@ -77,8 +77,8 @@ const translations = {
         "Relax in a wooden sauna with mountain views. Our sauna is built according to traditional recipes and natural materials. Traditional sauna rituals, aromatherapy, and relaxation area available. Cold water pool and relaxation terrace. Expert guidance from experienced sauna masters.",
       priceTable: {
         title: "Pricing",
-        rental: "Rental (up to 2 hours)",
-        additionalHour: "Each additional hour",
+        rental: "Sauna with an additional lounge area and a home theater",
+        additionalHour: "Parmeister (bath attendant) services are paid separately",
       },
     },
     price: "Price:",
@@ -88,14 +88,14 @@ const translations = {
 
 // Editable prices (can be updated)
 const yurtPrices = {
-  overnight: "15,000 ₸",
-  additionalGuest: "3,000 ₸",
-  dayVisit: "8,000 ₸",
+  overnight: "20,000 ₸",
+  additionalGuest: "15,000 ₸",
+  dayVisit: "100,000 ₸",
 };
 
 const saunaPrices = {
-  rental: "12,000 ₸",
-  additionalHour: "4,000 ₸",
+  rental: "60,000 ₸",
+  additionalHour: "",
 };
 
 export default function Retreat() {
@@ -123,14 +123,14 @@ export default function Retreat() {
             <div className="space-y-6">
               <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl border border-primary/20">
                 <img
-                  src="https://images.unsplash.com/photo-1562832135-14a35d25edef?w=800&h=600&fit=crop&auto=format"
+                  src="https://i.yapx.ru/dzYN7.jpg"
                   alt="Traditional yurt exterior"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl border border-primary/20">
                 <img
-                  src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&auto=format"
+                  src="https://i.yapx.ru/dzaig.png"
                   alt="Traditional yurt interior"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -159,17 +159,17 @@ export default function Retreat() {
                   {t.yurts.priceTable.title}
                 </h3>
                 <div className="space-y-4">
-                  <div className="flex justify-between items-center py-3 border-b border-primary/20">
+                  <div className="flex justify-between items-center py-3 border-b border-primary/20 gap-4">
                     <span className="text-foreground/80">{t.yurts.priceTable.overnight}</span>
-                    <span className="text-2xl font-bold text-primary">{yurtPrices.overnight}</span>
+                    <span className="text-2xl font-bold text-primary whitespace-nowrap">{yurtPrices.overnight}</span>
                   </div>
-                  <div className="flex justify-between items-center py-3 border-b border-primary/20">
+                  <div className="flex justify-between items-center py-3 border-b border-primary/20 gap-4">
                     <span className="text-foreground/80">{t.yurts.priceTable.additionalGuest}</span>
-                    <span className="text-2xl font-bold text-primary">{yurtPrices.additionalGuest}</span>
+                    <span className="text-2xl font-bold text-primary whitespace-nowrap">{yurtPrices.additionalGuest}</span>
                   </div>
-                  <div className="flex justify-between items-center py-3">
+                  <div className="flex justify-between items-center py-3 gap-4">
                     <span className="text-foreground/80">{t.yurts.priceTable.dayVisit}</span>
-                    <span className="text-2xl font-bold text-primary">{yurtPrices.dayVisit}</span>
+                    <span className="text-2xl font-bold text-primary whitespace-nowrap">{yurtPrices.dayVisit}</span>
                   </div>
                 </div>
                 <a
@@ -217,13 +217,13 @@ export default function Retreat() {
                   {t.sauna.priceTable.title}
                 </h3>
                 <div className="space-y-4">
-                  <div className="flex justify-between items-center py-3 border-b border-primary/20">
+                  <div className="flex justify-between items-center py-3 border-b border-primary/20 gap-4">
                     <span className="text-foreground/80">{t.sauna.priceTable.rental}</span>
-                    <span className="text-2xl font-bold text-primary">{saunaPrices.rental}</span>
+                    <span className="text-2xl font-bold text-primary whitespace-nowrap">{saunaPrices.rental}</span>
                   </div>
-                  <div className="flex justify-between items-center py-3">
+                  <div className="flex justify-between items-center py-3 gap-4">
                     <span className="text-foreground/80">{t.sauna.priceTable.additionalHour}</span>
-                    <span className="text-2xl font-bold text-primary">{saunaPrices.additionalHour}</span>
+                    <span className="text-2xl font-bold text-primary whitespace-nowrap">{saunaPrices.additionalHour}</span>
                   </div>
                 </div>
                 <a
@@ -241,14 +241,14 @@ export default function Retreat() {
             <div className="space-y-6">
               <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl border border-primary/20">
                 <img
-                  src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&h=600&fit=crop&auto=format"
+                  src="https://i.yapx.ru/dzYQF.jpg"
                   alt="Traditional sauna exterior"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl border border-primary/20">
                 <img
-                  src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop&auto=format"
+                  src="https://i.yapx.ru/dzYLM.jpg"
                   alt="Sauna relaxation area"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -260,3 +260,6 @@ export default function Retreat() {
     </div>
   );
 }
+
+
+

@@ -70,8 +70,8 @@ export default function Header({ language, setLanguage }: HeaderProps) {
         <Link to="/" className="flex items-center gap-3 group">
           <Mountain className="w-8 h-8 text-primary group-hover:scale-110 transition-transform" strokeWidth={1.5} />
           <span
-            className="text-3xl font-bold text-primary tracking-wider"
-            style={{ fontFamily: "Playfair Display, serif", fontStyle: "italic" }}
+            className="text-2xl font-bold text-primary tracking-wide"
+            style={{ fontFamily: "Fjalla One, sans-serif" }}
           >
             ARGYMAQ
           </span>

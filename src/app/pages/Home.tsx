@@ -5,23 +5,23 @@ import { Language } from "../components/Header";
 
 const translations = {
   kz: {
-    title: "Арғымақ",
-    subtitle: "Зона отдыха на природе — в часе от Алматы",
-    viewServices: "Көру қызметтер",
+    title: "Argymaq",
+    subtitle: "Тыныштық пен жайлылық үйлесім тапқан мекен",
+    viewServices: "Қызметтерді қарау",
     whatsapp: "WhatsApp-қа жазу",
     yurts: "Киіз үйлер",
     yurtsDesc: "Дәстүрлі киіз үйлерде түнеу",
     sauna: "Моншалар",
     saunaDesc: "Таза ауада демалу",
     horses: "Ат клубы",
-    horsesDesc: "Атпен серуендеу және оқыту",
+    horsesDesc: "Атпен серуендеу және үйрену",
     entertainment: "Ойын-сауық",
     entertainmentDesc: "Табиғатта белсенді демалыс",
   },
   ru: {
-    title: "Арғымақ",
-    subtitle: "Зона отдыха на природе — в часе от Алматы",
-    viewServices: "Смотреть услуги",
+    title: "Argymaq",
+    subtitle: "Место, где покой и уют нашли гармонию",
+    viewServices: "Посмотреть услуги",
     whatsapp: "Написать в WhatsApp",
     yurts: "Юрты",
     yurtsDesc: "Проживание в традиционных юртах",
@@ -34,7 +34,7 @@ const translations = {
   },
   en: {
     title: "Argymaq",
-    subtitle: "Nature retreat zone — one hour from Almaty",
+    subtitle: "Where peace and comfort find perfect harmony",
     viewServices: "View Services",
     whatsapp: "Message on WhatsApp",
     yurts: "Yurts",
@@ -101,7 +101,7 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 text-center px-6 max-w-5xl">
           <h1
-            className="text-6xl md:text-8xl font-bold text-primary mb-6 drop-shadow-2xl tracking-wide"
+            className="text-6xl md:text-8xl font-normal text-primary mb-6 drop-shadow-2xl tracking-wide"
             style={{ fontFamily: "Playfair Display, serif", fontStyle: "italic" }}
           >
             {t.title}
